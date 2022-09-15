@@ -1,0 +1,500 @@
+<header class="header pt-5">
+    <div class="header-inner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <div class="logo-text">
+                        <img src="assets/images/logo_full.svg" class="img-fluid" alt="Cappstech" />
+                    </div>
+                </div>
+                <div class="col-6 text-end">
+                    <button class="btn btn-header-drawer" (click)="toggleDrawer()">
+                        <picture>
+                            <source type="image/webp" srcset="assets/images/drawer.webp">
+                            <source type="image/png" srcset="assets/images/drawer.png">
+                            <img src="assets/images/drawer.png" alt="drawer">
+                        </picture>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="drawer" [ngClass]="{'hide': drawer}">
+        <div class="col-12 text-end">
+            <button class="btn btn-drawer-close" (click)="toggleDrawer()">&#10539;</button>
+        </div>
+        <div class="col-12 p-5 text-center text-md-start">
+            <ul class="main-menu list-unstyled">
+                <li class="menu-item" (click)="scrollTo('services-provide')"><a>Services</a>
+                </li>
+                <li class="menu-item" (click)="scrollTo('featured-projects')"><a>Featured
+                        Projects</a></li>
+                <li class="menu-item" (click)="scrollTo('about')"><a>About Cappstech</a></li>
+                <li class="menu-item" (click)="scrollTo('professional')"><a>We are Professionals</a></li>
+                <li class="menu-item" (click)="scrollTo('happy-client')"><a>Our Happy Clients</a></li>
+                <li class="menu-item" (click)="scrollTo('contact')"><a>Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<section class="banner-section py-1 py-md-5" id="#home">
+    <div class="banner-inner py-1 py-md-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                    <h1 class="pb-2 pb-md-5">We are Cappstech</h1>
+                    <p class="pb-3">Software Design & Development Agency,<br class="d-none d-md-block" /> Working with
+                        startups & scaleups to design growth-driven</p>
+                    <a href="#contact" class="btn custom-btn me-3">Contact us</a>
+                    <a href="#featured-projects" class="btn btn-explore-project my-3 my-md-0">Explore Projects <span
+                            class="ms-3"><img src="assets/images/feather-arrow-right-circle.svg"
+                                alt="feather arrow right circle" /></span></a>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/banner-img.webp">
+                        <source type="image/png" srcset="assets/images/banner-img.png">
+                        <img src="assets/images/banner-img.png" class="img-fluid" alt="banner-img">
+                    </picture>
+                </div>
+                <div class="col-12 text-center mt-5 py-5">
+                    <a href="#services-provide-section">SCROll!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services-provide" class="services-provide-section">
+    <div class="services-provide-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-2"></div>
+                <div class="col-12 col-md-8 text-center">
+                    <h2>Services we provide</h2>
+                    <p>We build & design impactful Web & Mobile Application and branding for product-led companies
+                        around the world. Using the industry-proven methods Jobs to be Done, we’ve developed a highly
+                        optimised process that takes the brand to the next level.</p>
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/services-img.webp">
+                        <source type="image/png" srcset="assets/images/services-img.png">
+                        <img src="assets/images/services-img.png" alt="services-img" class="img-fluid service-img" />
+                    </picture>
+                </div>
+                <div class="col-12 col-md-2"></div>
+            </div>
+            <div class="row py-5 services-details g-1 g-md-5">
+                <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+                    <img src="assets/images/component-2.svg" alt="component-2" class="pb-3 pb-md-5" />
+                    <h3 class="pb-4">Software <br />Development</h3>
+                    <p>We build highly impactful Custom software for startup & multidisciplinary companies.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+                    <img src="assets/images/component-3.svg" alt="component-3" class="pb-3 pb-md-5" />
+                    <h3 class="pb-4">Mobile <br />Application</h3>
+                    <p>We architect, build and deliver exceptional digital experiences with micro-interaction.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+                    <img src="assets/images/component-4.svg" alt="component-4" class="pb-3 pb-md-5" />
+                    <h3 class="pb-4">UI UX <br />Designing</h3>
+                    <p>We craft creative design for Mobile & web that make your brand standout.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+                    <img src="assets/images/component-7.svg" alt="component-7" class="pb-3 pb-md-5" />
+                    <h3 class="pb-4">Digital<br /> Marketing</h3>
+                    <p>We build highly impactful Custom software for startup & multidisciplinary companies.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+                    <img src="assets/images/component-6.svg" alt="component-6" class="pb-3 pb-md-5" />
+                    <h3 class="pb-4">Back-End <br />Development</h3>
+                    <p>We architect, build and deliver exceptional digital experiences with micro-interaction.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 text-center text-md-start">
+                    <img src="assets/images/component-5.svg" alt="component-5" class="pb-3 pb-md-5" />
+                    <h3 class="pb-4">Branding <br />Identity Design</h3>
+                    <p>We craft creative design for Mobile & web that make your brand standout.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button class="btn custom-btn me-3">Explore Services</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="featured-projects-section py-5" id="featured-projects">
+    <div class="featured-projects-inner">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-md-2"></div>
+                <div class="col-12 col-md-8 text-center">
+                    <h2>Featured Projects</h2>
+                    <p>We build & design impactful Web & Mobile Application and branding for product-led companies
+                        around the world. Using the industry-proven methods Jobs to be Done, we’ve developed a highly
+                        optimised process that takes the brand to the next level.</p>
+                </div>
+                <div class="col-12 col-md-2"></div>
+            </div>
+        </div>
+        <div id="feature-slider" class="feature-slider py-5">
+            <owl-carousel-o [options]="customOptions" #featslider>
+                <ng-template carouselSlide>
+                    <div class="row align-items-center w-100 ps-4">
+                        <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                            <h2 class="pb-2 pb-md-5">Haraj</h2>
+                            <p class="pb-3">We build Well-knowned Haraj Application & Website based on Kingdom of Saudi
+                                Arabia</p>
+                            <button class="btn custom-btn me-lg-3">View Project</button>
+                        </div>
+                        <div class="col-12 col-lg-7 text-center text-lg-end">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/feature-img.webp">
+                                <source type="image/png" srcset="assets/images/feature-img.png">
+                                <img src="assets/images/feature-img.png" class="img-fluid" alt="feature-img">
+                            </picture>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="row align-items-center w-100 ps-4">
+                        <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                            <h2 class="pb-2 pb-md-5">Haraj</h2>
+                            <p class="pb-3">We build Well-knowned Haraj Application & Website based on Kingdom of Saudi
+                                Arabia</p>
+                            <button class="btn custom-btn me-lg-3">View Project</button>
+                        </div>
+                        <div class="col-12 col-lg-7 text-center text-lg-end">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/feature-img.webp">
+                                <source type="image/png" srcset="assets/images/feature-img.png">
+                                <img src="assets/images/feature-img.png" class="img-fluid" alt="feature-img">
+                            </picture>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="row align-items-center w-100 ps-4">
+                        <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                            <h2 class="pb-2 pb-md-5">Haraj</h2>
+                            <p class="pb-3">We build Well-knowned Haraj Application & Website based on Kingdom of Saudi
+                                Arabia</p>
+                            <button class="btn custom-btn me-lg-3">View Project</button>
+                        </div>
+                        <div class="col-12 col-lg-7 text-center text-lg-end">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/feature-img.webp">
+                                <source type="image/png" srcset="assets/images/feature-img.png">
+                                <img src="assets/images/feature-img.png" class="img-fluid" alt="feature-img">
+                            </picture>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="row align-items-center w-100 ps-4">
+                        <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                            <h2 class="pb-2 pb-md-5">Haraj</h2>
+                            <p class="pb-3">We build Well-knowned Haraj Application & Website based on Kingdom of Saudi
+                                Arabia</p>
+                            <button class="btn custom-btn me-lg-3">View Project</button>
+                        </div>
+                        <div class="col-12 col-lg-7 text-center text-lg-end">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/feature-img.webp">
+                                <source type="image/png" srcset="assets/images/feature-img.png">
+                                <img src="assets/images/feature-img.png" class="img-fluid" alt="feature-img">
+                            </picture>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="row align-items-center w-100 ps-4">
+                        <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                            <h2 class="pb-2 pb-md-5">Haraj</h2>
+                            <p class="pb-3">We build Well-knowned Haraj Application & Website based on Kingdom of Saudi
+                                Arabia</p>
+                            <button class="btn custom-btn me-lg-3">View Project</button>
+                        </div>
+                        <div class="col-12 col-lg-7 text-center text-lg-end">
+                            <picture>
+                                <source type="image/webp" srcset="assets/images/feature-img.webp">
+                                <source type="image/png" srcset="assets/images/feature-img.png">
+                                <img src="assets/images/feature-img.png" class="img-fluid" alt="feature-img">
+                            </picture>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</section>
+<section class="about-section py-5 overflow-hidden" id="about">
+    <div class="about-inner py-5">
+        <div class="container mb-4 p-lg-5 pe-lg-0">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                    <h3>About Cappstech</h3>
+                    <h2 class="pb-2 pb-md-5">We build more than just experiences</h2>
+                    <p class="pb-3">We build & design impactful Web & Mobile Application and branding for product-led
+                        companies around the world. Using the industry-proven methods Jobs to be Done, we’ve developed a
+                        highly optimised process that takes the brand to the next level.</p>
+                    <button class="btn custom-btn">Read More</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/Finance.webp">
+                        <source type="image/png" srcset="assets/images/Finance.png">
+                        <img src="assets/images/Finance.png" class="img-fluid" alt="Finance-img">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="professional-section" id="professional">
+    <div class="professional-inner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                    <h2 class="pb-2 pb-md-5">We are Professionals</h2>
+                    <p>We're a growing family of 382,081 designers and makers from around the world</p>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-4">
+                            <div class="icon-box mb-5">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/icons/Image3.webp">
+                                    <source type="image/png" srcset="assets/icons/Image3.png">
+                                    <img src="assets/icons/Image3.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="icon-box mb-5">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/icons/Image8.webp">
+                                    <source type="image/png" srcset="assets/icons/Image8.png">
+                                    <img src="assets/icons/Image8.png" alt="" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="icon-box mb-5">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/icons/Image4.webp">
+                                    <source type="image/png" srcset="assets/icons/Image4.png">
+                                    <img src="assets/icons/Image4.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="icon-box mb-5">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/icons/Image6.webp">
+                                    <source type="image/png" srcset="assets/icons/Image6.png">
+                                    <img src="assets/icons/Image6.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="icon-box mb-5">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/icons/Image7.webp">
+                                    <source type="image/png" srcset="assets/icons/Image7.png">
+                                    <img src="assets/icons/Image6.png" alt="Google" />
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="icon-box mb-5">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/icons/Image5.webp">
+                                    <source type="image/png" srcset="assets/icons/Image5.png">
+                                    <img src="assets/icons/Image5.png" alt="" />
+                                </picture>
+                            </div>
+                            <div class="icon-box mb-5">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/icons/apple.webp">
+                                    <source type="image/png" srcset="assets/icons/apple.png">
+                                    <img src="assets/icons/apple.png" alt="Apple" />
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="happy-client-section py-5">
+    <div class="happy-client-inner">
+        <div class="container" id="happy-client">
+            <div class="row">
+                <div class="col-12 col-md-2"></div>
+                <div class="col-12 col-md-8 text-center">
+                    <h2 class="mb-4">Our Happy Clients</h2>
+                    <p>We have been proudly partnering with more than 700 forward-thinking companies of all sizes, from
+                        startups to world-famous enterprises.</p>
+                </div>
+                <div class="col-12 col-md-2"></div>
+            </div>
+        </div>
+        <div class="w-100">
+            <owl-carousel-o [options]="happyClient" #featslider>
+                <ng-template carouselSlide>
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/Image9.webp">
+                        <source type="image/png" srcset="assets/images/Image9.png">
+                        <img src="assets/images/Image9.png" alt="" />
+                    </picture>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/Image10.webp">
+                        <source type="image/png" srcset="assets/images/Image10.png">
+                        <img src="assets/images/Image10.png" alt="" />
+                    </picture>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/Image9.webp">
+                        <source type="image/png" srcset="assets/images/Image9.png">
+                        <img src="assets/images/Image9.png" alt="" />
+                    </picture>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/Image11.webp">
+                        <source type="image/png" srcset="assets/images/Image11.png">
+                        <img src="assets/images/Image11.png" alt="" />
+                    </picture>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/Image12.webp">
+                        <source type="image/png" srcset="assets/images/Image12.png">
+                        <img src="assets/images/Image12.png" alt="" />
+                    </picture>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/Image14.webp">
+                        <source type="image/png" srcset="assets/images/Image14.png">
+                        <img src="assets/images/Image14.png" alt="" />
+                    </picture>
+                </ng-template>
+            </owl-carousel-o>
+
+        </div>
+    </div>
+</section>
+<section class="conversation-section py-5">
+    <div class="conversation-inner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-5 py-5 text-center text-lg-start">
+                    <h2 class="pb-2 pb-md-5">Let’s Start the Conversation!</h2>
+                    <p class="pb-3">Get our bi-weekly emails 💌 with insightful content on how to boost your product
+                        growth.</p>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <picture>
+                        <source type="image/webp" srcset="assets/images/conversation-image.webp">
+                        <source type="image/png" srcset="assets/images/conversation-image.png">
+                        <img src="assets/images/conversation-image.png" class="img-fluid conversation-img"
+                            alt="conversation-img">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="form-section py-5" id="contact">
+    <div class="form-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-2 col-xl-3"></div>
+                <div class="col-12 col-lg-8 col-xl-6">
+                    <form [formGroup]="contactForm" (ngSubmit)="submit(contactForm.value)">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-4">
+                                <label for="name" class="required form-label">Name</label>
+                                <input type="text" class="form-control" formControlName="name">
+                            </div>
+                            <div class="col-12 col-md-6 mb-4">
+                                <label for="CompanyName" class="form-label">Company Name</label>
+                                <input type="text" class="form-control" formControlName="companyName">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-4">
+                                <label for="Email" class="required form-label">Email</label>
+                                <input type="email" class="form-control" formControlName="email">
+                            </div>
+                            <div class="col-12 col-md-6 mb-4">
+                                <label for="where_are_you_based" class="form-label">Where are you based?</label>
+                                <input type="text" class="form-control" formControlName="location">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mb-4">
+                                <label for="about_project_requirement" class="required form-label">About Project
+                                    Requirement?</label>
+                                <textarea class="form-control" formControlName="requirements"
+                                    id="about_project_requirement" style="height: 200px"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" [disabled]="!contactForm.valid" class="btn custom-btn w-100">Send</button>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-2 col-xl-3"></div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-12 text-center">
+                    <h2>Let’s make something amazing together</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer" class="py-5">
+    <div class="footer-inner">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="logo-text mb-3">
+                        <img src="assets/images/logo_full.svg" class="img-fluid" alt="Cappstech" />
+                    </div>
+                    <p>Get our bi-weekly emails 💌 with insightful content on how to boost your product growth.</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 footer-quick-links">
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#featured-projects">Projects</a></li>
+                        <li><a href="#">Policy</a></li>
+                        <li><a href="#services-provide">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Start Project</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0">
+                    <p>Contact</p>
+                    <p><a href="mailto:hello@cappstech.com">Hello@Cappstech.com</a></p>
+                    <ul class="social-list list-inline mt-4">
+                        <li class="list-inline-item me-4"><a href="https://www.facebook.com/CappstechOnFB"><img
+                                    src="assets/images/facebook.svg" alt="facebook"></a></li>
+                        <li class="list-inline-item me-4"><a href="https://twitter.com/cappstech"><img
+                                    src="assets/images/twitter.svg" alt="twitter"></a></li>
+                        <li class="list-inline-item me-4"><a href="https://www.linkedin.com/company/cappstech"><img
+                                    src="assets/images/linkedin.svg" alt="linkedin"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>Copyright © 2021 Cappstech. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- alert -->
+<div class="alert alert-success w-100 alert-dismissible fade" role="alert" id="myalert">
+    Thank you for contacting us. We'll reply back to you soon.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
